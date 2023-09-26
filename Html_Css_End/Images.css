@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.NavBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 75px;
+    background-color: rgb(2, 20, 31);
+        
+}
+
+.NavBar > div{
+    margin-right: 80px;
+    color: white;
+}
+
+.logo{
+    margin-left: 5px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 50%;
+    transition: background-color .9s;
+}
+
+.logo:hover{
+    background-color: rgb(255, 208, 0);
+}
+
+.GridContainer{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    > div{
+        height: 469.75px;
+        width: 469.75px;
+        >img{
+        height: inherit;
+        width: inherit;
+        object-fit: cover;
+        object-position: top;
+        }
+    }
+}
+
+footer{
+    > .FooterContainer{
+        height: inherit;
+        width: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background-color: rgb(2, 20, 31);
+        > div{
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+            > a{
+                color: black;
+                margin: 5px;
+            }
+
+            > p{
+                margin-left: 60px;
+            }
+            
+            >h4{
+                margin: 5px;
+            }
+        
+        }
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    .GridContainer{
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        > div{
+            height: 350px;
+            width: 350px;
+            >img{
+            height: inherit;
+            width: inherit;
+            object-fit: cover;
+            object-position: top;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    .GridContainer{
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        > div{
+            height: 250px;
+            width: 250px;
+            >img{
+            height: inherit;
+            width: inherit;
+            object-fit: cover;
+            object-position: top;
+            }
+        }
+    }
+
+}
